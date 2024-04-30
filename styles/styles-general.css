@@ -46,6 +46,7 @@ header .nav-link {
     display: flex;
 }
 
+
 #HeroSection {
     background-image: url("../assets/heroImg.jpg") !important;
     background-size: cover;
@@ -186,6 +187,24 @@ header .nav-link {
 #ProductosSection .card-producto .card-title,
 .card-producto .card-text {
     color: var(--color2); /* Color del texto */
+}
+
+footer {
+    background-color: var(--color2) !important;
+    color: var(--color1) !important ;
+}
+
+footer a .linkFooter {
+    color: var(--color1) !important;
+    transition: color 0.3s ease;
+}
+
+footer a .linkFooter:hover {
+    color: var(--color3) !important ;
+} 
+
+footer .linkFooter {
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {

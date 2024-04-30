@@ -47,6 +47,25 @@ header .nav-link {
     display: flex;
 }
 
+footer {
+    background-color: var(--color2) !important;
+    color: var(--color1) !important ;
+}
+
+footer a .linkFooter {
+    color: var(--color1) !important;
+    transition: color 0.3s ease;
+}
+
+footer a .linkFooter:hover {
+    color: var(--color3) !important ;
+} 
+
+footer .linkFooter {
+    text-decoration: none;
+}
+
+
 .container {
     background-color: #fff;
     padding: 2rem;
