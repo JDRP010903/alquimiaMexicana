@@ -47,7 +47,7 @@
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Detalles de Pago</h4>
             <h2 class="text-center mb-4">Proceso de Pago</h2>
-            <form>
+            <form id="paymentForm">
                 <div class="mb-3">
                     <label for="fullName" class="form-label">Nombre Completo</label>
                     <input type="text" class="form-control" id="fullName" placeholder="Introduce tu nombre completo">
@@ -71,9 +71,11 @@
                     </div>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-custom">Realizar Pago</button>
+                    <button type="button" class="btn btn-custom" onclick="procesarPago()">Realizar Pago</button>
                 </div>
             </form>
+            <div id="loading" style="display: none;">Procesando tu pago...</div>
+            <div id="paymentSuccess" style="display: none;">¡Pago completado! Redireccionando...</div>
         </div>
         <div class="col-md-4 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -146,6 +148,7 @@
             </section>
         </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../js/pago.js"></script>
 </body>
 </html>
