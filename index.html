@@ -94,6 +94,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mezcal Joven</h5>
                                 <p class="card-text">Pura frescura del agave joven, ideal para un brindis vibrante y auténtico.</p>
+                                <p class="price">Precio: $45.00</p>
                             </div>
                             <a href="./pages/comprar.html" type="button" class="btn btn-custom">Comprar</a>
                         </div>
@@ -104,6 +105,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mezcal Reposado</h5>
                                 <p class="card-text">Suavidad ahumada con un toque de roble, perfecto para degustar solo o en cocteles.</p>
+                                <p class="price">Precio: <s>$60.00</s> $54.00</p> <!-- Precio con descuento -->
                             </div>
                             <a href="./pages/comprar.html" type="button" class="btn btn-custom">Comprar</a>
                         </div>
@@ -114,31 +116,34 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mezcal Añejo</h5>
                                 <p class="card-text">Rico y complejo, con notas profundas de caramelo y especias, añejado a la perfección.</p>
+                                <p class="price">Precio: $70.00</p>
                             </div>
                             <a href="./pages/comprar.html" type="button" class="btn btn-custom">Comprar</a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 card-producto">
-                            <img src="./assets/producto4.jpg" class="card-img-top" alt="Mezcal Añejo">
+                            <img src="./assets/producto4.jpg" class="card-img-top" alt="Mezcal Reposado cristalino">
                             <div class="card-body">
                                 <h5 class="card-title">Mezcal Reposado cristalino</h5>
                                 <p class="card-text">Claridad excepcional con un paladar suave, la modernidad se encuentra con la tradición.</p>
+                                <p class="price">Precio: <s>$65.00</s> $58.50</p> <!-- Precio con descuento -->
                             </div>
                             <a href="./pages/comprar.html" type="button" class="btn btn-custom">Comprar</a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 card-producto">
-                            <img src="./assets/producto4.jpg" class="card-img-top" alt="Mezcal Añejo">
+                            <img src="./assets/producto4.jpg" class="card-img-top" alt="Mezcal Añejo 100 tierras">
                             <div class="card-body">
                                 <h5 class="card-title">Mezcal Añejo 100 tierras</h5>
                                 <p class="card-text">Edición limitada, encapsula un siglo de tradición y sabor de la tierra oaxaqueña.</p>
+                                <p class="price">Precio: $100.00</p>
                             </div>
                             <a href="./pages/comprar.html" type="button" class="btn btn-custom">Comprar</a>
                         </div>
                     </div>
-                </div>
+                </div>                
             </div>
         </section>
         
@@ -195,8 +200,20 @@
         </section>
     </footer>
     
+    <div class="chatbot-icon" onclick="toggleChatbot()">💬</div>
+    <div class="chatbot" style="display: none;">
+        <div class="chatbot-header">
+            <span class="chatbotHeader">Chatbot</span>
+            <button class="btn btn-custom34 d-flex justify-content-center align-items-center w-25" onclick="toggleChatbot()">X</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages"></div>
+        <input type="text" id="chatbotInput" placeholder="Escribe un mensaje..." onkeypress="sendMessage(event)">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./js/chatbot.js"></script>
 </body>
 </html>

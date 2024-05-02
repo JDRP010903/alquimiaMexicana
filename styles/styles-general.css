@@ -189,6 +189,10 @@ header .nav-link {
     color: var(--color2); /* Color del texto */
 }
 
+#ProductosSection .price {
+    color: var(--color2);
+}
+
 footer {
     background-color: var(--color2) !important;
     color: var(--color1) !important ;
@@ -206,6 +210,61 @@ footer a .linkFooter:hover {
 footer .linkFooter {
     text-decoration: none;
 }
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color3);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.chatbot-header {
+    padding: 5px 10px;
+    background: var(--color3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chatbot input,
+.chatbot button {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 @media (max-width: 768px) {
     #HeroSection {

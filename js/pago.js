@@ -34,3 +34,10 @@ function procesarPago() {
         alert('Por favor, llena todos los campos.');
     }
 }
+
+function updateTotal() {
+    var unitPrice = parseFloat(document.getElementById('unitPrice').innerText);
+    var quantity = parseInt(document.getElementById('productQuantity').value);
+    var total = unitPrice * quantity;
+    document.getElementById('totalPrice').innerText = total.toFixed(2);
+}
